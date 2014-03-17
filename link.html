@@ -10,11 +10,18 @@
 			}
 
 			.pass{
+				position:absolute;
 				width: 200px;
 				height: 200px;
-				color: green;
+				background-color: white;
 				-webkit-transform: rotateX( 90deg );
 				-moz-transform: rotateX( 90deg );
+			}
+			
+			.faile{
+				position:absolute;
+				width: 200px;
+				height: 200px;
 			}
 
 
@@ -23,7 +30,8 @@
 	<body>
 
 		<div class='container'>
-			<div class='pass'><a href='http://www.mark-lundin.com'>Test passed!</a></div>
+			<div class='fail'>Sorry, this Doodle does not work</div>
+			<div class='pass'>This Doodle works!</div>
 		</div>
 
 	</body>
