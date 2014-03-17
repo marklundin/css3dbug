@@ -6,28 +6,19 @@
 				position:absolute;
 				-webkit-transform-style: preserve-3d;
 				-moz-transform-style: preserve-3d;			
-				-webkit-transform: rotateX( -90deg );
-				-moz-transform: rotateX( -90deg );
+				-webkit-transform: rotateX( 90deg );
+				-moz-transform: rotateX( 90deg );
 			}
 
-			.pass{
+			.fail{
 				width: 300px;
 				background-color: white;
 				-webkit-transform-style: preserve-3d;
 				-moz-transform-style: preserve-3d;
-				-webkit-transform: rotateX( 90deg );
-				-moz-transform: rotateX( 90deg );
+				-webkit-transform: rotateX( 0deg );
+				-moz-transform: rotateX( 0deg );
 			}
 			
-			img{
-				-webkit-transform: translateZ( 1px );
-			}
-			
-			a{
-				-webkit-transform-style: preserve-3d;
-				-moz-transform-style: preserve-3d;
-				-webkit-transform: translateZ( 1px );
-			}
 			
 			.fail{
 				position:absolute;
@@ -39,17 +30,12 @@
 	</head>
 	<body>
 
-		<div class='fail'>Sorry, this Doodle doesn't work</div>
+		<div>Success</div>
 		<div class='container'>
-			<div class='pass'>A Test</div>
+			<div class='fail'>Sorry, this Doodle doesn't work</div>
 		</div>
 		
-		<script>
-			
-			console.log( $('.pass') );
-			$('.pass').click(function(){alert('test')})
-			
-		</script>
+
 
 	</body>
 </html>
