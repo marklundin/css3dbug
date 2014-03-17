@@ -13,8 +13,14 @@
 			.pass{
 				width: 300px;
 				background-color: white;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
 				-webkit-transform: rotateX( 90deg );
 				-moz-transform: rotateX( 90deg );
+			}
+			
+			img{
+				-webkit-transform: translateZ( 1px );
 			}
 			
 			.fail{
