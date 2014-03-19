@@ -4,7 +4,38 @@
 
 			.container{
 				position:absolute;
+				-webkit-transform-style: preserve-3d;<html>
+	<head>
+		<style>
+
+			.container{
 				-webkit-transform-style: preserve-3d;
+				-webkit-transform: rotateX( 90deg );
+			}
+
+			.right{
+				-webkit-transform: rotateX( -90deg );
+			}
+
+			@media all and (-webkit-transform-3d){
+				.container{
+					background: blue;
+				}	
+			}
+
+
+
+
+		</style>
+	</head>
+	<body>
+
+		<div class='container'>
+			<div class='right'>Preserve-3d should cancel out rotation. Text should be visible</div>
+		</div>
+
+	</body>
+</html>
 				-moz-transform-style: preserve-3d;			
 				-webkit-transform: translateX( 100000000px );
 				-moz-transform: translateX( 100000000px );
